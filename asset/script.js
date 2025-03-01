@@ -179,5 +179,5 @@ document.addEventListener("click", function() {
     audio.play();
     setTimeout(function() {
        $('#loverImage').fadeIn(6000);
-    }, 60000);
+    }, 50000);
 });
