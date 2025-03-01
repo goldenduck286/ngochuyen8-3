@@ -147,14 +147,9 @@
 
   var textAnimate = eval(
     Jscex.compile("async", function () {
-      // var together = new Date();
-      // together.setFullYear(2024,10 , 18);
-      // together.setHours(0);
-      // together.setMinutes(0);
-      // together.setSeconds(0);
-      // together.setMilliseconds(0);
-
-      $("#code").show().typewriter();
+      $("#code").show().typewriter(function () {
+      });
+  
       $("#clock-box").fadeIn(500);
       while (true) {
         timeElapse(together);
@@ -182,4 +177,7 @@
 document.addEventListener("click", function() {
     var audio = document.getElementById("myAudio");
     audio.play();
+    setTimeout(function() {
+       $('#loverImage').fadeIn(6000);
+    }, 60000);
 });
